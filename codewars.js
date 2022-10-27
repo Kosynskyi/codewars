@@ -521,3 +521,9 @@
 // console.log(
 //   this.toJadenCase("how can mirrors be real if our eyes aren't real")
 // ); // "How Can Mirrors Be Real If Our Eyes Aren't Real"
+console.log(2);
+
+// function removeChar(str) {
+//   return str.slice(1, str.length - 1);
+// }
+// console.log(removeChar("JavaScript")); //avaScrip
