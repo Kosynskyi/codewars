@@ -521,9 +521,78 @@
 // console.log(
 //   this.toJadenCase("how can mirrors be real if our eyes aren't real")
 // ); // "How Can Mirrors Be Real If Our Eyes Aren't Real"
-console.log(2);
-
+// -------------------------------------------------------------------------------------
 // function removeChar(str) {
 //   return str.slice(1, str.length - 1);
 // }
 // console.log(removeChar("JavaScript")); //avaScrip
+// -------------------------------------------------------------------------------------
+// function simpleMultiplication(number) {
+//   //   if (number % 2 === 0) {
+//   //     return number * 8;
+//   //   } else {
+//   //     return number * 9;
+//   //   }
+//   return number % 2 === 0 ? number * 8 : number * 9;
+// }
+
+// console.log(simpleMultiplication(3));//27
+// console.log(simpleMultiplication(2));//16
+// -------------------------------------------------------------------------------------
+// You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
+// Considering these factors, write a function that tells you if it is possible to get to the pump or not.
+// Function should return true if it is possible and false if not.
+
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//   return mpg * fuelLeft >= distanceToPump ? true : false;
+// };
+// console.log(zeroFuel(50, 25, 2));//true
+// console.log(zeroFuel(100, 50, 1));//false
+// -------------------------------------------------------------------------------------
+// function findOdd(A) {
+//   let numbersGroup = {};
+
+//   for (let number of A) {
+//     // console.log("numbersGroup[number] ", numbersGroup[number]);
+//     // console.log(number);
+//     if (numbersGroup[number] === undefined) {
+//       numbersGroup[number] = 1;
+//     } else {
+//       numbersGroup[number] += 1;
+//     }
+//   }
+//   return numbersGroup;
+// }
+
+// const qwe = {
+//   a: 9,
+//   b: 8,
+//   c: 7,
+// };
+// console.log(qwe["a"]);
+
+// console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 3, 2, 2, 1, 4])); //{1: 2, 2: 4, 3: 6, 4: 1}
+// console.log(findOdd([7])); //{7: 1}
+// console.log(findOdd([1, 1, 2]));//{1: 2, 2: 1}
+// -------------------------------------------------------------------------------------
+
+// Given an array of integers, find the one that appears an odd number of times.
+// There will always be only one integer that appears an odd number of times.
+// function findOdd(A) {
+//   let count = 0;
+//   for (let i = 0; i < A.length; i += 1) {
+//     for (let j = 0; j < A.length; j += 1) {
+//       if (A[i] === A[j]) {
+//         count += 1;
+//       }
+//     }
+//     if (count % 2 != 0) {
+//       return A[i];
+//     }
+//   }
+// }
+
+// console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 3, 2, 2, 1, 4])); //3
+// console.log(findOdd([7])); //7
+// console.log(findOdd([1, 1, 2])); //2
+// -------------------------------------------------------------------------------------
