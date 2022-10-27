@@ -539,7 +539,9 @@
 // console.log(simpleMultiplication(3));//27
 // console.log(simpleMultiplication(2));//16
 // -------------------------------------------------------------------------------------
-// You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
+// You were camping with your friends far away from home, but when it's time to go back,
+// you realize that your fuel is running out and the nearest pump is 50 miles away!
+// You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
 // Considering these factors, write a function that tells you if it is possible to get to the pump or not.
 // Function should return true if it is possible and false if not.
 
@@ -595,4 +597,38 @@
 // console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 3, 2, 2, 1, 4])); //3
 // console.log(findOdd([7])); //7
 // console.log(findOdd([1, 1, 2])); //2
+// -------------------------------------------------------------------------------------
+// function stringToArray(string) {
+//   return string.split(" ");
+// }
+
+// console.log(stringToArray("I love arrays they are my favorite")); //["I", "love", "arrays", "they", "are", "my", "favorite"]
+
+// -------------------------------------------------------------------------------------
+// function expandedForm(num) {
+//   const res = [];
+//   const arr = String(num).split("").reverse();
+
+//   for (let i = 0; i < arr.length; i += 1) {
+//     if (Number(arr[i]) === 0) {
+//       continue;
+//     }
+//     res.push(arr[i] * Math.pow(10, i));
+//   }
+//   return res.reverse().join(" + ");
+// }
+
+// console.log(expandedForm(42)); //'40 + 2'
+// console.log(expandedForm(513)); //'500 + 10 + 3'
+// console.log(expandedForm(70304)); //'70000 + 300 + 4'
+
+// // краще рішення на codewars!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// const expandedForm = n => n.toString()
+//                             .split("")
+//                             .reverse()
+//                             .map( (a, i) => a * Math.pow(10, i))
+//                             .filter(a => a > 0)
+//                             .reverse()
+//                             .join(" + ");
+
 // -------------------------------------------------------------------------------------
