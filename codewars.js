@@ -719,3 +719,130 @@
 // console.log(areaOrPerimeter(3, 3)); //  9
 // console.log(areaOrPerimeter(6, 10)); // 32
 // -------------------------------------------------------------------------------------
+// function points(games) {
+//   let total = 0;
+//   for (let i = 0; i < games.length; i += 1) {
+//     if (games[i][0] > games[i][2]) {
+//       total += 3;
+//     } else if (games[i][0] === games[i][2]) {
+//       total += 1;
+//     }
+//   }
+//   return total;
+// }
+
+// console.log(
+//   points([
+//     '1:0',
+//     '2:0',
+//     '3:0',
+//     '4:0',
+//     '2:1',
+//     '3:1',
+//     '4:1',
+//     '3:2',
+//     '4:2',
+//     '4:3',
+//   ]),
+// ); // 30);
+// console.log(
+//   points([
+//     '1:1',
+//     '2:2',
+//     '3:3',
+//     '4:4',
+//     '2:2',
+//     '3:3',
+//     '4:4',
+//     '3:3',
+//     '4:4',
+//     '4:4',
+//   ]),
+// ); // 10);
+// console.log(
+//   points([
+//     '0:1',
+//     '0:2',
+//     '0:3',
+//     '0:4',
+//     '1:2',
+//     '1:3',
+//     '1:4',
+//     '2:3',
+//     '2:4',
+//     '3:4',
+//   ]),
+// ); // 0);
+// -------------------------------------------------------------------------------------
+// var number = function (array) {
+//   return array.map((item, index) => {
+//     return `${index + 1}: ${item}`;
+//   });
+// };
+// console.log(number([])); //[], 'Empty array should return empty array');
+// console.log(number(['a', 'b', 'c'])); //["1: a", "2: b", "3: c"], 'Return the correct line numbers')
+// -------------------------------------------------------------------------------------
+// var isSquare = function (n) {
+//   if (n === 0) {
+//     return true;
+//   }
+
+//   return n % Math.sqrt(n) === 0 ? true : false;
+// };
+// краще рішення на codewars
+
+// var isSquare = function(n){
+//     return Math.sqrt(n) % 1 === 0 ? true : false;
+//   };
+
+// tests
+// console.log(isSquare(3)); // false, "3 is not a square number");
+// console.log(isSquare(4)); // true, "4 is a square number (2 * 2)");
+// console.log(isSquare(0)); // "0 is a square number (0 * 0)");
+// -------------------------------------------------------------------------------------
+
+// ==========================НЕ ВИРІШИВ!!!!!!!!!!!!!!!!!!===============================
+// function queueTime(customers, n) {
+//   console.log('customers.length ', customers.length);
+//   const totalClients = customers.reduce((acc, item) => {
+//     return acc + item;
+//   }, 0);
+//   console.log('totalClients ', totalClients);
+//   console.log(500 / 4);
+//   if (totalClients < n) {
+//     return customers.length;
+//   }
+//   return totalClients / n;
+//   return totalClients < n ? customers.length : totalClients / n;
+// }
+// !!!!!!!!!!!!!ПРАВИЛЬНЕ РІШЕННЯ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//
+// function queueTime(customers, n) {
+//   // creates an array of length n representing the tills
+//   // Each till is given a value of 0 to represent initial waitTime before the queue begins.
+//   const tills = new Array(n).fill(0);
+//   console.log(tills);
+//   // goes through the queue of customer waitTimes
+//   for (let waitTime of customers) {
+//     // finds the till with the least wait time on it, adds the next customer's time to it
+//     console.log(Math.min(...tills));
+//     const lowestWaitTill = tills.indexOf(Math.min(...tills));
+//     tills[lowestWaitTill] += waitTime;
+//   }
+//   // end result is that the waitTimes (load) on the tills are distributed optimally.
+//   // The waitTime of the till with the heaviest load represents the total time taken
+//   return Math.max(...tills);
+// }
+// console.log((queueTime([], 1)))//, 0);
+// console.log(queueTime([1, 2, 3, 4], 1)); //, 10);
+// console.log(queueTime([2, 2, 3, 3, 4, 4], 2)); //, 9);
+// console.log(queueTime([1, 2, 3, 4, 5], 100)); //, 5);
+// console.log(
+//   queueTime(
+//     [
+//       31, 48, 17, 3, 1, 10, 16, 40, 27, 3, 14, 2, 19, 25, 21, 14, 46, 35, 4, 28,
+//       14, 13, 26, 30, 13,
+//     ],
+//     4,
+//   ),
+// ); //, 136);
