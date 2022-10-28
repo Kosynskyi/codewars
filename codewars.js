@@ -632,3 +632,90 @@
 //                             .join(" + ");
 
 // -------------------------------------------------------------------------------------
+// function isIsogram(str) {
+//   const arr = str.toLowerCase();
+//   for (let i = 0; i < arr.length; i += 1) {
+//     for (let j = i + 1; j < arr.length; j += 1) {
+//       if (arr[i] !== arr[j]) {
+//         continue;
+//       } else {
+//         return false;
+//       }
+//     }
+//   }
+//   return true;
+// }
+// console.log(isIsogram('Dermatoglyphics')); //true
+// console.log(isIsogram('aba')); //false
+// console.log(isIsogram('moOse')); //false
+// console.log(isIsogram('abc')); //true
+
+// // краще рішення на codewars
+// function isIsogram(str) {
+//   console.log(new Set(str.toLowerCase()));
+//   console.log(new Set(str.toLowerCase()).size);
+//   console.log(str.length);
+
+//   return new Set(str.toUpperCase()).size === str.length;
+// }
+// // tests
+// console.log(isIsogram('Dermatoglyphics')); //true
+// console.log(isIsogram('aba')); //false
+// console.log(isIsogram('moOse')); //false
+// console.log(isIsogram('abc')); //true
+// -------------------------------------------------------------------------------------
+// function DNAtoRNA(dna) {
+//   const arr = dna.split('');
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 'T') {
+//       arr[i] = 'U';
+//     }
+//   }
+//   return arr.join('');
+// }
+
+// круті рішення з codewars
+// function DNAtoRNA(dna) {
+//   return dna.replace(/T/g, 'U');
+// }
+// function DNAtoRNA(dna) {
+//   console.log(dna.split('T'));
+//   console.log(dna.split('T').join('U'));
+//   //   return dna.split('T').join('U');
+// }
+
+// //   tests
+// console.log(DNAtoRNA('TTTT')); //"UUUU"
+// console.log(DNAtoRNA('GCAT')); //"GCAU"
+// -------------------------------------------------------------------------------------
+// function invert(array) {
+//   return array.map(item => item * -1);
+// }
+
+// console.log(invert([1, 2, 3, 4, 5])); //[-1,-2,-3,-4,-5]
+// console.log(invert([1, -2, 3, -4, 5])); //[-1,2,-3,4,-5]
+// -------------------------------------------------------------------------------------
+// function setAlarm(employed, vacation) {
+//   return employed === true && vacation === false ? true : false;
+// }
+// круте рішення з codewars
+// function setAlarm(employed, vacation){
+//     return (employed && !vacation) ? true : false;
+//   }
+// console.log(setAlarm(true, true)); //false
+// console.log(setAlarm(false, true)); // false
+// console.log(setAlarm(true, false)); // true
+// -------------------------------------------------------------------------------------
+// function abbrevName(name) {
+//   const arr = name.split(' ');
+//   return `${arr[0][0].toUpperCase()}.${arr[1][0].toUpperCase()}`;
+// }
+// console.log(abbrevName('Sam Harris')); // "S.H"
+// console.log(abbrevName('Patrick Feenan')); // "P.F"
+// -------------------------------------------------------------------------------------
+// const areaOrPerimeter = function (l, w) {
+//   return l === w ? l * w : (l + w) * 2;
+// };
+// console.log(areaOrPerimeter(3, 3)); //  9
+// console.log(areaOrPerimeter(6, 10)); // 32
+// -------------------------------------------------------------------------------------
