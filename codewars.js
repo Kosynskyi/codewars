@@ -808,7 +808,6 @@
 //     return acc + item;
 //   }, 0);
 //   console.log('totalClients ', totalClients);
-//   console.log(500 / 4);
 //   if (totalClients < n) {
 //     return customers.length;
 //   }
