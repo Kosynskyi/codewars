@@ -555,7 +555,7 @@
 //   let numbersGroup = {};
 
 //   for (let number of A) {
-//     // console.log("numbersGroup[number] ", numbersGroup[number]);
+//     // console.log('numbersGroup[number] ', numbersGroup[number]);
 //     // console.log(number);
 //     if (numbersGroup[number] === undefined) {
 //       numbersGroup[number] = 1;
@@ -571,11 +571,11 @@
 //   b: 8,
 //   c: 7,
 // };
-// console.log(qwe["a"]);
+// console.log(qwe['a']); //9
 
 // console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 3, 2, 2, 1, 4])); //{1: 2, 2: 4, 3: 6, 4: 1}
 // console.log(findOdd([7])); //{7: 1}
-// console.log(findOdd([1, 1, 2]));//{1: 2, 2: 1}
+// console.log(findOdd([1, 1, 2])); //{1: 2, 2: 1}
 // -------------------------------------------------------------------------------------
 
 // Given an array of integers, find the one that appears an odd number of times.
@@ -845,3 +845,115 @@
 //     4,
 //   ),
 // ); //, 136);
+// -------------------------------------------------------------------------------------
+// const otherAngle = (a, b) => 180 - a - b;
+
+// console.log(otherAngle(30, 60)); // 90);
+// console.log(otherAngle(60, 60)); // 60);
+// console.log(otherAngle(43, 78)); // 59);
+// -------------------------------------------------------------------------------------
+// const count = string => {
+//   const arrOfString = string.split('').reduce((acc, letter) => {
+//     acc[letter] ? (acc[letter] += 1) : (acc[letter] = 1);
+
+//     // if (acc[letter]) {
+//     //   acc[letter] += 1;
+//     // } else {
+//     //   acc[letter] = 1;
+//     // }
+//     return acc;
+//   }, {});
+//   return arrOfString;
+// };
+
+// console.log(count('aba')); //{ a: 2, b: 1 };
+// console.log(count('')); //{}
+// -------------------------------------------------------------------------------------
+// const smash = words => words.join(' ');
+
+// console.log(smash(['hello', 'world'])); //, "hello world"
+// console.log(smash(['hello', 'amazing', 'world'])); //, "hello amazing world"
+// -------------------------------------------------------------------------------------
+// const updateLight = current => {
+//   if (current === 'green') {
+//     return 'yellow';
+//   } else if (current === 'yellow') {
+//     return 'red';
+//   } else {
+//     return 'green';
+//   }
+// };
+// =======================коротше рішення з codewars========================
+// const updateLight = current =>
+//   ({ green: `yellow`, yellow: `red`, red: `green` }[current]);
+
+// console.log(updateLight('green')); //, "yellow"
+// console.log(updateLight('yellow')); //, "red"
+// console.log(updateLight('red')); //, "green"
+// -------------------------------------------------------------------------------------
+// const hero = (bullets, dragons) => (bullets >= dragons * 2 ? true : false);
+// console.log(hero(10, 5)); //, true);
+// console.log(hero(7, 4)); //, false);
+// -------------------------------------------------------------------------------------
+// const reverseSeq = n => {
+//   const arr = [];
+
+//   for (let i = n; i >= 1; i -= 1) {
+//     arr.push(i);
+//   }
+
+//   return arr;
+// };
+// console.log(reverseSeq(5)); //, [5, 4, 3, 2, 1])
+// -------------------------------------------------------------------------------------
+// const alphabetPosition = text => {
+//   const alphabet = [
+//     'a',
+//     'b',
+//     'c',
+//     'd',
+//     'e',
+//     'f',
+//     'g',
+//     'h',
+//     'i',
+//     'j',
+//     'k',
+//     'l',
+//     'm',
+//     'n',
+//     'o',
+//     'p',
+//     'q',
+//     'r',
+//     's',
+//     't',
+//     'u',
+//     'v',
+//     'w',
+//     'x',
+//     'y',
+//     'z',
+//   ];
+
+//   const arrOfText = text.toLowerCase().split('');
+//   const result = [];
+
+//   for (let i = 0; i < arrOfText.length; i += 1) {
+//     for (let j = 0; j < alphabet.length; j += 1) {
+//       if (alphabet[j] === arrOfText[i]) {
+//         result.push(j + 1);
+//       }
+//     }
+//   }
+//   return result.join(' ');
+// };
+//======================краще рішення на codewars============================
+// function alphabetPosition(text) {
+//     const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+//     return text.toLowerCase().replace(/[^a-z]/g,'').split('').map(x => alphabet.indexOf(x)+1).join(' ');
+//   }
+
+// console.log(alphabetPosition('JavaScript')); // "10 1 22 1 19 3 18 9 16 20"
+// console.log(alphabetPosition('I love JavaScript')); // "9 12 15 22 5 10 1 22 1 19 3 18 9 16 20"
+// console.log(alphabetPosition('The narwhal bacons at midnight.')); // "20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 14 9 7 8 20");
