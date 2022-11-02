@@ -957,3 +957,147 @@
 // console.log(alphabetPosition('JavaScript')); // "10 1 22 1 19 3 18 9 16 20"
 // console.log(alphabetPosition('I love JavaScript')); // "9 12 15 22 5 10 1 22 1 19 3 18 9 16 20"
 // console.log(alphabetPosition('The narwhal bacons at midnight.')); // "20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 14 9 7 8 20");
+// const sumTwoSmallestNumbers = numbers => {
+//   const sortedArr = numbers.sort((a, b) => a - b);
+//   return sortedArr[0] + sortedArr[1];
+// };
+
+// console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22])); // 13
+// console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43])); // 6
+// -------------------------------------------------------------------------------------
+
+// const minMax = arr => {
+//   const sortedArr = [...arr].sort((a, b) => a - b);
+//   return [sortedArr[0], sortedArr[sortedArr.length - 1]];
+// };
+
+// console.log(minMax([1, 2, 3, 4, 5])); //[1, 5]
+// console.log(minMax([1])); //[1]
+// console.log(minMax([2334454, 5])); //[ 5, 2334454 ]
+// -------------------------------------------------------------------------------------
+// const high = x => {
+//   const alphabet = [
+//     'a',
+//     'b',
+//     'c',
+//     'd',
+//     'e',
+//     'f',
+//     'g',
+//     'h',
+//     'i',
+//     'j',
+//     'k',
+//     'l',
+//     'm',
+//     'n',
+//     'o',
+//     'p',
+//     'q',
+//     'r',
+//     's',
+//     't',
+//     'u',
+//     'v',
+//     'w',
+//     'x',
+//     'y',
+//     'z',
+//   ];
+
+//   const arrFromString = x.split(' ');
+//   const arrNumbersFromString = [];
+//   //   console.log('arrFromString ', arrFromString);
+
+//   for (let i = 0; i < arrFromString.length; i += 1) {
+//     const sumOfElement = arrFromString[i]
+//       .replace(/[^a-z]/, '')
+//       .split('')
+//       .map(x => alphabet.indexOf(x) + 1)
+//       .reduce((acc, item) => (acc += item), 0);
+//     // console.log(sumOfElement);
+//     arrNumbersFromString.push(sumOfElement);
+//   }
+//   //   console.log('Math.max ', Math.max(...arrNumbersFromString));
+//   const indexOfMaxSum = arrNumbersFromString.indexOf(
+//     Math.max(...arrNumbersFromString),
+//   );
+//   return arrFromString[indexOfMaxSum];
+// };
+//======================коротше рішення на codewars============================
+
+// function high(x){
+//     const alpha = 'abcdefghijklmnopqrstuvwxyz'
+//     const words = x.split(' ')
+//     const scores = words.map(x => [...x].map(y => alpha.indexOf(y) + 1)).map(x => x.reduce((a,b) => a + b,0))
+
+//     return words[scores.indexOf(Math.max(...scores))]
+//   }
+
+// console.log(high('aaa b')); //, 'aaa'
+// console.log(high('what time are we climbing up the volcano')); //, 'volcano'
+// -------------------------------------------------------------------------------------
+// class Kata {
+//   static getVolumeOfCuboid(length, width, height) {
+//     return length * width * height;
+//   }
+// }
+
+// console.log(Kata.getVolumeOfCuboid(1, 2, 2)); //  4
+// console.log(Kata.getVolumeOfCuboid(6, 2, 5)); // 60
+// -------------------------------------------------------------------------------------
+// const greet = (...args) => (args[0] === args[1] ? 'Hello boss' : 'Hello guest');
+// console.log(greet('Daniel', 'Daniel')); // 'Hello boss'
+// console.log(greet('Greg', 'Daniel')); // 'Hello guest'
+// -------------------------------------------------------------------------------------
+
+// const greetingObj = {
+//   english: 'Welcome',
+//   czech: 'Vitejte',
+//   danish: 'Velkomst',
+//   dutch: 'Welkom',
+//   estonian: 'Tere tulemast',
+//   finnish: 'Tervetuloa',
+//   flemish: 'Welgekomen',
+//   french: 'Bienvenue',
+//   german: 'Willkommen',
+//   irish: 'Failte',
+//   italian: 'Benvenuto',
+//   latvian: 'Gaidits',
+//   lithuanian: 'Laukiamas',
+//   polish: 'Witamy',
+//   spanish: 'Bienvenido',
+//   swedish: 'Valkommen',
+//   welsh: 'Croeso',
+// };
+
+// const greet = language => {
+//   const lang = Object.keys(greetingObj);
+//   const greetingValues = Object.values(greetingObj);
+//   const idx = lang.indexOf(language);
+//   return lang.includes(language) ? greetingValues[idx] : 'Welcome';
+//======================коротше рішення на codewars============================
+//// return greetingObj[language] || 'Welcome';
+// };
+
+// console.log(greet('english')); // 'Welcome', "Your function should have returned 'Welcome'. Try again.");
+// console.log(greet('dutch')); // 'Welkom', "Your function should have returned 'Welkom'. Try again.");
+// console.log(greet('IP_ADDRESS_INVALID')); // 'Welcome', "Your function should have returned 'Welcome'. Try again.");
+// -------------------------------------------------------------------------------------
+// const enough = (cap, on, wait) => (cap >= on + wait ? 0 : on + wait - cap);
+
+// console.log(enough(20, 5, 5)); // 0
+// console.log(enough(67, 12, 75)); // 20
+// -------------------------------------------------------------------------------------
+// const countSheep = num => {
+//   const arr = [];
+//   for (let i = 0; i < num; i += 1) {
+//     arr.push(`${i + 1} sheep...`);
+//   }
+//   return arr.join('');
+// };
+
+// console.log(countSheep(0)); //, ""
+// console.log(countSheep(1)); //, "1 sheep..."
+// console.log(countSheep(2)); //, "1 sheep...2 sheep..."
+// -------------------------------------------------------------------------------------
