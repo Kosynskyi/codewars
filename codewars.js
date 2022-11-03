@@ -1101,3 +1101,45 @@
 // console.log(countSheep(1)); //, "1 sheep..."
 // console.log(countSheep(2)); //, "1 sheep...2 sheep..."
 // -------------------------------------------------------------------------------------
+//======================ТЯЖКА БУЛА...ВКРАЛА ГОДИН 3============================
+// const order = words => {
+//   const wordsArr = words.split(' ');
+//   const numbersFromString = words.replace(/\D/g, '').split('');
+//   // console.log('wordsArr ', wordsArr);
+//   const arr = [];
+
+//   for (let i = 0; i < numbersFromString.length; i += 1) {
+//     // console.log(qwe[i] + wordsArr[i]);
+//     arr.push(numbersFromString[i] + wordsArr[i]);
+//   }
+//   // console.log(a);
+//   const result = [...arr]
+//     .sort((a, b) => a.localeCompare(b))
+//     .map(item => item.slice(1))
+//     .join(' ');
+//   // console.log('b ', b);
+
+//   return result;
+// };
+
+//======================краще рішення на codewars============================
+// function order(words) {
+//   return words.split(' ').sort((wordA, wordB) => wordA.match(/\d+/) > wordB.match(/\d+/)).join(' ')
+// }
+//======================краще рішення на codewars============================
+// function order(words) {
+//   return words.split(" ").sort((a, b) => a.replace(/[^\d]/g, "") - b.replace(/[^\d]/g, "")).join(" ")
+// }
+//======================краще рішення на codewars============================
+// function order(words){
+//   return words && words.split(' ')
+//     .map(word => word.match(/\d/) + word)
+//     .sort()
+//     .map(word => word.slice(1))
+//     .join(' ');
+// }
+
+// console.log(order('is2 Thi1s T4est 3a')); //, "Thi1s is2 3a T4est")
+// console.log(order('4of Fo1r pe6ople g3ood th5e the2')); //, "Fo1r the2 g3ood 4of th5e pe6ople")
+// console.log(order('')); //, "", "empty input should return empty string" )
+// -------------------------------------------------------------------------------------
