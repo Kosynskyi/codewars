@@ -1143,3 +1143,107 @@
 // console.log(order('4of Fo1r pe6ople g3ood th5e the2')); //, "Fo1r the2 g3ood 4of th5e pe6ople")
 // console.log(order('')); //, "", "empty input should return empty string" )
 // -------------------------------------------------------------------------------------
+// const firstMissingNonConsecutive = arr => {
+//   const reversedArr = arr.reverse();
+//   for (let i = 0; i < reversedArr.length; i += 1) {
+//     if (reversedArr[i] - reversedArr[i + 1] === 1) {
+//       continue;
+//     }
+//     return reversedArr[i] - 1;
+//   }
+// };
+
+// console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); // 5
+// -------------------------------------------------------------------------------------
+// const firstNonConsecutive = arr => {
+//   for (let i = 0; i < arr.length; i += 1) {
+//     if (arr[i] - arr[i + 1] === -1) {
+//       continue;
+//     }
+//     return arr[i] === arr[arr.length - 1] ? null : arr[i + 1];
+//   }
+// };
+//======================краще рішення на codewars============================
+
+// function firstNonConsecutive(arr) {
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] - arr[0] !== i) {
+//       return arr[i];
+//     }
+//   }
+//   return null;
+// }
+//======================краще рішення на codewars============================
+// function firstNonConsecutive(arr) {
+//   for (let i = 0; i < arr.length - 1; ++i) {
+//     if (arr[i] + 1 !== arr[i + 1]) {
+//       return arr[i + 1];
+//     }
+//   }
+//   return null;
+// }
+// console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); // 6
+// console.log(firstNonConsecutive([-3, -2, -1, 0, 1, 2, 3, 4, 5, 6])); // null
+// console.log(firstNonConsecutive([1, 2, 3, 4])); // null
+// console.log(firstNonConsecutive([2, 3, 4, 6, 8, 9, 10, 11])); // 6
+// -------------------------------------------------------------------------------------
+// const greet = name => `Hello, ${name} how are you doing today?`;
+
+// console.log(greet('Ryan')); // "Hello, Ryan how are you doing today?"
+// -------------------------------------------------------------------------------------
+//======================5 kyu ranked up============================
+// const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) =>
+//   laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+
+// console.log(goals(0, 0, 0)); // 0
+// console.log(goals(43, 10, 5)); // 58
+// -------------------------------------------------------------------------------------
+// const bmi = (weight, height) => {
+//   const bmi = weight / Math.pow(height, 2);
+//   if (bmi <= 18.5) {
+//     return 'Underweight';
+//   } else if (bmi <= 25) {
+//     return 'Normal';
+//   } else if (bmi <= 30) {
+//     return 'Overweight';
+//   } else {
+//     return 'Obese';
+//   }
+// };
+// console.log(bmi(80, 1.8)); //"Normal"
+// -------------------------------------------------------------------------------------
+// const check = (a, x) => (a.includes(x) ? true : false);
+
+// console.log(check(['t', 'e', 's', 't'], 'e')); // true
+// console.log(check(['what', 'a', 'great', 'kata'], 'kat')); // false
+// -------------------------------------------------------------------------------------
+// const findShort = s => {
+//   const arr = s.split(' ');
+//   const short = [arr[0]];
+
+//   for (let i = 0; i < arr.length; i += 1) {
+//     if (short[0].length > arr[i].length) {
+//       short.splice(0, 1, arr[i]);
+//     }
+//   }
+//   return short[0].length;
+// };
+
+//======================краще рішення============================
+// const findShort = s => Math.min(...s.split(' ').map(item => item.length));
+
+// console.log(
+//   findShort(
+//     'turns out random test cases are easier than writing out basic ones',
+//   ),
+// ); // 3
+// console.log(findShort("Let's travel abroad shall we")); // 2
+// -------------------------------------------------------------------------------------
+// const filter_list = l => l.filter(item => item === Number(item));
+// filter_list([1, 2, 'a', 'b']); // [1,2]
+// filter_list([1, 'a', 'b', 0, 15]); // [1,0,15]
+// -------------------------------------------------------------------------------------
+// const checkForFactor = (base, factor) => (base % factor === 0 ? true : false);
+
+// console.log(checkForFactor(9, 2)); // false;
+// console.log(checkForFactor(10, 2)); // true;
