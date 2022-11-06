@@ -1154,7 +1154,7 @@
 // };
 
 // console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8])); // 5
-// -------------------------------------------------------------------------------------
+// ---------------------------------------!!----------------------------------------------
 // const firstNonConsecutive = arr => {
 //   for (let i = 0; i < arr.length; i += 1) {
 //     if (arr[i] - arr[i + 1] === -1) {
@@ -1247,3 +1247,81 @@
 
 // console.log(checkForFactor(9, 2)); // false;
 // console.log(checkForFactor(10, 2)); // true;
+// -------------------------------------------------------------------------------------
+// const calculateYears = (principal, interest, tax, desired) => {
+//   let depositTime = 0;
+
+//   for (
+//     let i = principal;
+//     i <= desired;
+//     i += i * interest - i * interest * tax
+//   ) {
+//     if (i < desired) {
+//       depositTime += 1;
+//     }
+//   }
+//   return depositTime;
+// };
+
+// console.log(calculateYears(1000, 0.01625, 0.18, 1200)); // 14
+// console.log(calculateYears(1000, 0.05, 0.18, 1000)); // 0
+// -------------------------------------------------------------------------------------
+// const longestConsec = (strarr, k) => {
+//   const objOfWordsAndLength = strarr.reduce((acc, item) => {
+//     acc[item] = item.length;
+//     return acc;
+//   }, {});
+
+//   const arrOfKeysAndValues = Object.entries(objOfWordsAndLength);
+//   const arrOfValues = Object.values(objOfWordsAndLength);
+//   const res = [];
+
+//   if (arrOfKeysAndValues.length === 0 || k <= 0) {
+//     return '';
+//   }
+
+//   for (let i = 0; i < k; i += 1) {
+//     const maxIndex = arrOfValues.indexOf(Math.max(...arrOfValues));
+//     const newArr = arrOfKeysAndValues.splice(maxIndex, 1);
+//     res.push(newArr[0][0]);
+//   }
+//   return res.join('');
+// };
+//======================краще рішення============================
+
+// function longestConsec(strarr, k) {
+//   if (k <= 0 || k > strarr.length) {
+//     return '';
+//   }
+//   return strarr.reduce((long, item, i) => {
+//     const currString = strarr.slice(i, i + k).join('');
+//     return currString.length > long.length ? currString : long;
+//   }, '');
+// }
+
+// console.log(
+//   longestConsec(['zone', 'abigail', 'theta', 'form', 'libe', 'zas'], 2),
+// ); // "abigailtheta"
+// console.log(longestConsec([], 3)); // ""
+// console.log(
+//   longestConsec(['wlwsasphmxx', 'owiaxujylentrklctozmymu', 'wpgozvxxiu'], 2),
+// ); //owiaxujylentrklctozmymuwpgozvxxiu
+// -------------------------------------------------------------------------------------
+// const fakeBin = x => {
+//   const res = [];
+//   for (let i = 0; i < x.length; i += 1) {
+//     x[i] < 5 ? res.push(0) : res.push(1);
+//   }
+//   return res.join('');
+// };
+//======================краще рішення============================
+// function fakeBin(x) {
+//     return x.split('').map(n => n < 5 ? 0 : 1).join('');
+// }
+//======================краще рішення============================
+// function fakeBin(x) {
+//     return x.replace(/\d/g, d => d < 5 ? 0 : 1);
+//   }
+
+// console.log(fakeBin('45385593107843568')); // '01011110001100111'
+// console.log(fakeBin('509321967506747')); // '101000111101101'
