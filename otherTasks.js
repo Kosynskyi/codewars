@@ -65,3 +65,56 @@
 // }, {});
 
 // console.log(uniqObj);
+
+// Задачка з тестового про баржу і зерно
+
+// const loadGrain = levels => {
+//   if (levels.length === 0) return 0;
+//   let total = [];
+//   let idx = 0;
+
+//   for (let i = idx; i < levels.length; i = idx) {
+//     if (idx === levels.length - 1) break;
+//     const arrItem = [];
+//     arrItem.push(levels[i]);
+//     for (let j = i + 1; j < levels.length; j += 1) {
+//       if (j === levels.length - 1) {
+//         arrItem.push(levels[j]);
+//         idx = j;
+//         total = [...total, arrItem];
+//         break;
+//       }
+
+//       if (levels[i] > levels[j]) {
+//         arrItem.push(levels[j]);
+//       } else {
+//         arrItem.push(levels[j]);
+//         idx = j;
+//         total = [...total, arrItem];
+//         break;
+//       }
+//     }
+//   }
+
+//   const result = total.reduce((acc, item) => {
+//     if (item[0] < item[item.length - 1]) {
+//       for (let i = 0; i < item.length - 2; i += 1) {
+//         acc += item[0] - item[i + 1];
+//       }
+//     } else {
+//       item.reverse();
+//       for (let i = 0; i < item.length - 2; i += 1) {
+//         acc += item[0] - item[i + 1];
+//       }
+//     }
+//     return acc;
+//   }, 0);
+//   return result;
+// };
+
+// console.log(loadGrain([4, 1, 3])); //2
+// console.log(loadGrain([2, 1, 5, 2, 7, 4, 10])); //7
+// console.log(loadGrain([2, 0, 1, 5, 2, 7])); //6
+// console.log(loadGrain([2, 4, 2])); //0
+// console.log(loadGrain([7, 4])); //0
+// console.log(loadGrain([])); //0
