@@ -1387,3 +1387,81 @@
 //     return arr;
 //   }
 // -------------------------------------------------------------------------------------
+// function saleHotdogs(n){
+//     if(n < 5) {
+//       return n * 100
+//     } else if(n < 10) {
+//       return n * 95
+//     } else {
+//       return n * 90
+//     }
+//   }
+// -------------------------------------------------------------------------------------
+// function howManydays(month){
+//     var days;
+//     switch (month){
+//     case(1):
+//         days = 31;
+//         break;
+//     case(3):
+//         days = 31;
+//         break;
+//     case( 5):
+//         days = 31;
+//         break;
+//     case(7):
+//         days = 31;
+//         break;
+//     case( 8 ):
+//         days = 31;
+//         break;
+//     case( 10 ):
+//         days = 31;
+//         break;
+//     case( 12 ):
+//         days = 31;
+//         break;
+//     case(4):
+//         days = 30;
+//         break;
+//     case(6):
+//         days = 30;
+//         break;
+//     case(9):
+//         days = 30;
+//         break;
+//     case(11):
+//         days = 30;
+//         break;
+
+//     case(2):
+//         days = 28;
+//         break;
+//         default:
+//   return days
+//   }
+//     return days;
+//   }
+// -------------------------------------------------------------------------------------
+// function padIt(str, n) {
+//   if (n < 0) return;
+
+//   let res = str;
+
+//   do {
+//     res = '*' + res;
+//     while (res.length < n + str.length) {
+//       res += '*';
+//       break;
+//     }
+//   } while (res.length < n + str.length);
+//   return res;
+// }
+
+// console.log(padIt('a', 1)); //"*a"
+// console.log(padIt('a', 2)); //,"*a*"
+// console.log(padIt('a', 3)); //,"**a*"
+// console.log(padIt('a', 4)); //,"**a**"
+// console.log(padIt('a', 5)); //,"***a**"
+// console.log(padIt('nusjjlt', 13)); //,*******nusjjlt******
+// -------------------------------------------------------------------------------------
