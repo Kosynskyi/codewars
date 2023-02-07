@@ -1465,3 +1465,63 @@
 // console.log(padIt('a', 5)); //,"***a**"
 // console.log(padIt('nusjjlt', 13)); //,*******nusjjlt******
 // -------------------------------------------------------------------------------------
+// function pickIt(arr) {
+//   var odd = [],
+//     even = [];
+
+//   for (let i = 0; i < arr.length; i += 1) {
+//     arr[i] % 2 === 0 ? even.push(arr[i]) : odd.push(arr[i]);
+//   }
+
+//   return [odd, even];
+// }
+
+// console.lod(pickIt([1, 2])); //,[[1],[2]]);
+// console.lod(pickIt([1, 2, 3])); //,[[1,3],[2]]);
+// console.lod(pickIt([3, 2, 1])); //,[[3,1],[2]]);
+// console.lod(pickIt([10, 20, 30])); //,[[],[10,20,30]]);
+// console.lod(pickIt([11, 21, 31])); //,[[11,21,31],[]]);
+// -------------------------------------------------------------------------------------
+// const giveMeFive = obj => {
+//   const arrWords = [];
+
+//   for (let key in obj) {
+//     if (key.length === 5) {
+//       arrWords.push(key);
+//     }
+//     if (obj[key].length === 5) {
+//       arrWords.push(obj[key]);
+//     }
+//   }
+//   return arrWords;
+// };
+
+// // console.log(giveMeFive({ Our: 'earth', is: 'a', beautyful: 'world' })); //["earth","world"]
+// console.log(
+//   giveMeFive({ Ihave: 'enough', money: 'to', buy: 'a', car: 'model' }),
+// ); //["Ihave","money","model"]
+// -------------------------------------------------------------------------------------
+// const whatNumberIsIt = n => {
+//   if (Number(n) === Infinity) {
+//     return 'Input number is Number.POSITIVE_INFINITY';
+//   } else if (n === 1.7976931348623157e308) {
+//     return 'Input number is Number.MAX_VALUE';
+//   } else if (n === 5e-324) {
+//     return 'Input number is Number.MIN_VALUE';
+//   } else if (n >= 0) {
+//     return `Input number is ${n}`;
+//   } else if (isNaN(n)) {
+//     return 'Input number is Number.NaN';
+//   } else if (Infinity * -1) {
+//     return 'Input number is Number.NEGATIVE_INFINITY';
+//   }
+// };
+
+// console.log(whatNumberIsIt(1 / 0)); //,"Input number is Number.POSITIVE_INFINITY");
+// console.log(whatNumberIsIt(100)); //,"Input number is 100");
+// console.log(whatNumberIsIt(1.7976931348623157e308)); //,"Input number is Number.MAX_VALUE");
+// console.log(whatNumberIsIt(5e-324)); //,"Input number is Number.MIN_VALUE");
+// console.log(whatNumberIsIt(-Number.MAX_VALUE * 2)); //,"Input number is Number.NEGATIVE_INFINITY");
+// console.log(whatNumberIsIt(NaN)); //,"Input number is Number.NaN");
+// console.log(whatNumberIsIt(Infinity + 1)); //,"Input number is Number.POSITIVE_INFINITY");
+// -------------------------------------------------------------------------------------
