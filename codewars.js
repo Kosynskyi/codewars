@@ -1525,3 +1525,65 @@
 // console.log(whatNumberIsIt(NaN)); //,"Input number is Number.NaN");
 // console.log(whatNumberIsIt(Infinity + 1)); //,"Input number is Number.POSITIVE_INFINITY");
 // -------------------------------------------------------------------------------------
+// const grabDoll = dolls => {
+//   var bag = [];
+
+//   for (let i = 0; i < dolls.length; i += 1) {
+//     if (bag.length === 3) break;
+//     if (dolls[i] === 'Hello Kitty' || dolls[i] === 'Barbie doll') {
+//       bag.push(dolls[i]);
+//     } else {
+//       continue;
+//     }
+//   }
+//   return bag;
+// };
+
+// console.log(grabDoll(['Mickey Mouse', 'Hello Kitty', 'Snow white'])); //,["Hello Kitty"]);
+// console.log(
+//   grabDoll(['Mickey Mouse', 'Hello Kitty', 'Hello Kitty', 'Snow white']),
+// ); //,["Hello Kitty","Hello Kitty"]);
+// console.log(
+//   grabDoll([
+//     'Mickey Mouse',
+//     'Hello Kitty',
+//     'Hello Kitty',
+//     'Barbie doll',
+//     'Snow white',
+//   ]),
+// ); //,["Hello Kitty","Hello Kitty","Barbie doll"]);
+
+// console.log(
+//   grabDoll([
+//     'Mickey Mouse',
+//     'Barbie doll',
+//     'Hello Kitty',
+//     'Hello Kitty',
+//     'Hello Kitty',
+//     'Snow white',
+//   ]),
+// ); //,["Barbie doll","Hello Kitty","Hello Kitty"]);
+// -------------------------------------------------------------------------------------
+// function colorOf(r, g, b) {
+//   const red = r.toString(16);
+//   const green = g.toString(16);
+//   const blue = b.toString(16);
+//   const colorArr = [red, green, blue];
+//   const result = colorArr.map(item => (item.length < 2 ? 0 + item : item));
+//   return '#' + result.join('');
+// }
+
+// console.log(colorOf(255, 0, 0)); //, "#ff0000");
+// console.log(colorOf(0, 111, 0)); //, "#006f00");
+// console.log(colorOf(1, 2, 3)); //, "#010203");
+// -------------------------------------------------------------------------------------
+// function howManySmaller(arr, n) {
+//   const result = arr
+//     .map(item => item.toFixed(2))
+//     .filter(item => item < n).length;
+//   return result;
+// }
+// console.log(howManySmaller([1.234, 1.235, 1.228], 1.24)); //, 2);
+// console.log(howManySmaller([1.1888, 1.1868, 1.1838], 1.19)); //, 1);
+// console.log(howManySmaller([3.1288, 3.1212, 3.1205], 3.1212)); //, 2);
+// -------------------------------------------------------------------------------------
