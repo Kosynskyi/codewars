@@ -1587,3 +1587,53 @@
 // console.log(howManySmaller([1.1888, 1.1868, 1.1838], 1.19)); //, 1);
 // console.log(howManySmaller([3.1288, 3.1212, 3.1205], 3.1212)); //, 2);
 // -------------------------------------------------------------------------------------
+// -------------------------------------interesting methods of string------------------------------------------------
+
+// anchor()    Create HTML anchor.
+// big()       Display a string in a large font.
+// blink()     Display flashing string.
+// bold()      Use bold display string.
+// fixed()     Using a typewriter text display string.
+// fontcolor() Displays a string using the specified color.
+// fontsize()  Displays a string using the specified size.
+// italics()   Use italics string.
+// link()      Display a string as a link.
+// small()     Use small size to display string.
+// strike()    Use the delete line to display the string.
+// sub()       Display the string as a subscript.
+// sup()       Display the string as a superscript.
+
+// -------------------------------------------------------------------------------------
+// const cutIt = arr => {
+//   let len = arr[0].length;
+
+//   for (let i = 0; i < arr.length; i += 1) {
+//     if (arr[i].length < len) len = arr[i].length;
+//   }
+
+//   const res = arr.map(item => item.slice(0, len));
+//   return res;
+// };
+
+// console.log(cutIt(['ab', 'cde', 'fgh'])); // , ["ab","cd","fg"]);
+// console.log(cutIt(['abc', 'defgh', 'ijklmn'])); // , ["abc","def","ijk"]);
+// console.log(cutIt(['codewars', 'javascript', 'java'])); // , ["code","java","java"]);
+// -------------------------------------------------------------------------------------
+// const firstToLast = (str, c) =>
+//   str.includes(c) ? str.lastIndexOf(c) - str.indexOf(c) : -1;
+
+// console.log(firstToLast('ababc', 'a')); // 2
+// console.log(firstToLast('ababc', 'c')); // 0
+// console.log(firstToLast('ababc', 'd')); // -1
+// -------------------------------------------------------------------------------------
+// const splitAndMerge = (string, separator) =>
+//   string
+//     .split(' ')
+//     .map(item => item.split('').join(separator))
+//     .join(' ');
+
+// console.log(splitAndMerge('My name is John', ' ')); // , "M y n a m e i s J o h n");
+// console.log(splitAndMerge('My name is John', '-')); // , "M-y n-a-m-e i-s J-o-h-n");
+// console.log(splitAndMerge('Hello World!', '.')); // , "H.e.l.l.o W.o.r.l.d.!");
+// console.log(splitAndMerge('Hello World!', ',')); // , "H,e,l,l,o W,o,r,l,d,!");
+// -------------------------------------------------------------------------------------
