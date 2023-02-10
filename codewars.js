@@ -1637,3 +1637,18 @@
 // console.log(splitAndMerge('Hello World!', '.')); // , "H.e.l.l.o W.o.r.l.d.!");
 // console.log(splitAndMerge('Hello World!', ',')); // , "H,e,l,l,o W,o,r,l,d,!");
 // -------------------------------------------------------------------------------------
+// const alienLanguage = str => {
+//   let upperStrArr = str.toUpperCase().split(' ');
+//   const res = [];
+
+//   for (let i = 0; i < upperStrArr.length; i += 1) {
+//     // const lastLetter = upperStrArr[i][upperStrArr[i].length - 1];//останній символ слова
+//     res.push(upperStrArr[i].replace(/\w$/g, x => x.toLowerCase()));
+//   }
+//   return res.join(' ');
+// };
+
+// // console.log(alienLanguage('My name is John')); // , "My NAMe Is JOHn"
+// // console.log(alienLanguage('this is an example')); // , "THIs Is An EXAMPLe"
+// // console.log(alienLanguage('Hello World')); // , "HELLo WORLd"
+// // console.log(alienLanguage('HELLO WORLD')); // , "HELLo WORLd"
