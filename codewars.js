@@ -1652,6 +1652,7 @@
 // // console.log(alienLanguage('this is an example')); // , "THIs Is An EXAMPLe"
 // // console.log(alienLanguage('Hello World')); // , "HELLo WORLd"
 // // console.log(alienLanguage('HELLO WORLD')); // , "HELLo WORLd"
+// -------------------------------------------------------------------------------------
 // ---------------------------------не вирішив 😢----------------------------------------------------
 // const topSecret = str =>
 //   str.replace(/[a-z]/gi, c =>
@@ -1668,3 +1669,4 @@
 // console.log(topSecret('Pb qdph lv Mrkq')); // , "My name is John"
 // console.log(topSecret('wklv lv dq hadpsoh')); // , "this is an example"
 // console.log(topSecret('Khoor Zruog!')); // , "Hello World!"
+// -------------------------------------------------------------------------------------
