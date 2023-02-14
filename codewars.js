@@ -1670,3 +1670,13 @@
 // console.log(topSecret('wklv lv dq hadpsoh')); // , "this is an example"
 // console.log(topSecret('Khoor Zruog!')); // , "Hello World!"
 // -------------------------------------------------------------------------------------
+// const cockroachSpeed = s => {
+//   const cm = s * 100000;
+//   const res = cm / 3600;
+//   return Math.floor(res);
+// };
+
+// console.log(cockroachSpeed(1.08)); //, 30
+// console.log(cockroachSpeed(1.09)); //, 30
+// console.log(cockroachSpeed(0)); //, 0
+// -------------------------------------------------------------------------------------
