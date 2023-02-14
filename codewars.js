@@ -1652,15 +1652,19 @@
 // // console.log(alienLanguage('this is an example')); // , "THIs Is An EXAMPLe"
 // // console.log(alienLanguage('Hello World')); // , "HELLo WORLd"
 // // console.log(alienLanguage('HELLO WORLD')); // , "HELLo WORLd"
-// -------------------------------------------------------------------------------------
-const topSecret = str => {};
-//question1: The top secret file number is...
-// answer1 = '?';
-//question2: Super agent's name is...
-// answer2 = '?';
-//question3: He stole the treasure is...
-// answer3 = '?';
+// ---------------------------------не вирішив 😢----------------------------------------------------
+// const topSecret = str =>
+//   str.replace(/[a-z]/gi, c =>
+//     String.fromCharCode(c.charCodeAt(0) + (/[abc]/i.test(c) ? 23 : -3)),
+//   );
 
-console.log(topSecret('Pb qdph lv Mrkq')); // , "My name is John"
+//question1: The top secret file number is...
+// answer1 = '1850';
+// //question2: Super agent's name is...
+// answer2 = 'fQT';
+// //question3: He stole the treasure is...
+// answer3 = 'Train tire';
+
+// console.log(topSecret('Pb qdph lv Mrkq')); // , "My name is John"
 // console.log(topSecret('wklv lv dq hadpsoh')); // , "this is an example"
 // console.log(topSecret('Khoor Zruog!')); // , "Hello World!"
