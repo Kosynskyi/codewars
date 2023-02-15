@@ -1680,3 +1680,17 @@
 // console.log(cockroachSpeed(1.09)); //, 30
 // console.log(cockroachSpeed(0)); //, 0
 // -------------------------------------------------------------------------------------
+// const repeatStr = (n, s) => {
+//   let res = '';
+//   for (let i = 0; i < n; i += 1) {
+//     res += s;
+//   }
+//   return res;
+// };
+
+// const repeatStr2 = (n, s) => s.repeat(n);
+
+// console.log(repeatStr(3, '*')); //, "***"
+// console.log(repeatStr(5, '#')); //, "#####"
+// console.log(repeatStr(2, 'ha ')); //, "ha ha "
+// -------------------------------------------------------------------------------------
