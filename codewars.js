@@ -316,7 +316,7 @@
 // -------------------------------------------------------------------------------------
 // ----------------------НЕ ЗРОБИВ----------------------
 // function nbYear(p0, percent, aug, p) {
-//   for (var i = 0; p0 < p; i += 1) {
+//   for (const i = 0; p0 < p; i += 1) {
 //     p0 = Math.floor(p0 + (p0 * percent) / 100 + aug);
 //   }
 //   return i;
@@ -1711,4 +1711,68 @@
 // console.log(expressionMatter(2, 1, 1)); //, 4);
 // console.log(expressionMatter(1, 1, 1)); //, 3);
 // console.log(expressionMatter(1, 2, 3)); //, 9);
+// -------------------------------------------------------------------------------------
+// const getDivisorsCnt = n => {
+//   let res = 0;
+
+//   for (let i = 1; i <= n; i += 1) {
+//     if (n % i === 0) {
+//       res += 1;
+//     }
+//   }
+//   return res;
+// };
+
+// console.log(getDivisorsCnt(1)); //,  1);
+// console.log(getDivisorsCnt(10)); //, 4);
+// console.log(getDivisorsCnt(11)); //, 2);
+// console.log(getDivisorsCnt(54)); //, 8);
+// -------------------------------------------------------------------------------------
+// const productFib = prod => {
+//   const numArr = [0, 1];
+//   const res = [];
+//   let idx = 0;
+
+//   const step = 1;
+//   for (let i = 1; numArr[i] <= prod; i += 1) {
+//     let num = numArr[i] + numArr[i - step];
+//     numArr.push(num);
+//   }
+//   //   console.log(numArr); //array numbers Fibonacci untill prod
+
+//   for (let j = idx; j < numArr.length; j += 1) {
+//     let min = numArr[j] * numArr[j + 1];
+
+//     if (min >= prod) return res;
+
+//     if (min <= prod) {
+//       res[0] = numArr[j + 1];
+//       res[1] = numArr[j + 2];
+//     }
+
+//     res[2] = res[0] * res[1] === prod ? (res[2] = true) : (res[2] = false);
+//     // if (res[0] * res[1] === prod) {
+//     //   res[2] = true;
+//     // } else {
+//     //   res[2] = false;
+//     // }
+//   }
+//   return res;
+// };
+
+// ========================best practices========================
+// function productFib(prod){
+//     var n = 0;
+//     var nPlus = 1;
+//     while(n*nPlus < prod) {
+//       nPlus = n + nPlus;
+//       n = nPlus - n;
+//     }
+//     return [n, nPlus, n*nPlus===prod];
+//   }
+
+// console.log(productFib(4895)); //, [55, 89, true])
+// console.log(productFib(5895)); //, [89, 144, false])
+// console.log(productFib(74049690)); //, [6765, 10946, true])
+// console.log(productFib(84049690)); //, [10946, 17711, false])
 // -------------------------------------------------------------------------------------
