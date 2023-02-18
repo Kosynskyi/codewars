@@ -1776,3 +1776,29 @@
 // console.log(productFib(74049690)); //, [6765, 10946, true])
 // console.log(productFib(84049690)); //, [10946, 17711, false])
 // -------------------------------------------------------------------------------------
+// const highAndLow = numbers => {
+//   const NumbersArr = numbers.split(' ');
+
+//   return `${Math.max(...NumbersArr) + ' ' + Math.min(...NumbersArr)}`;
+// };
+
+// console.log(highAndLow('8 3 -5 42 -1 0 0 -9 4 7 4 -4')); //, "42 -9");
+// console.log(highAndLow('1 2 3')); //, "3 1");
+// -------------------------------------------------------------------------------------
+// function accum(s) {
+//   const arrStr = [];
+//   for (let i = 0; i < s.length; i += 1) {
+//     const str = s[i].repeat(i + 1);
+//     arrStr.push(str);
+//   }
+
+//   const result = arrStr
+//     .map(item => item[0].toUpperCase() + item.slice(1).toLowerCase())
+//     .join('-');
+//   return result;
+// }
+
+// console.log(accum('abcd')); // -> "A-Bb-Ccc-Dddd"
+// console.log(accum('RqaEzty')); // -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+// console.log(accum('cwAt')); // -> "C-Ww-Aaa-Tttt"
+// -------------------------------------------------------------------------------------
