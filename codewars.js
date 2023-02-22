@@ -1812,3 +1812,26 @@
 // console.log(domainName('https://youtube.com')); //, "youtube");
 // console.log(domainName('www.xakep.ru')); //, "xakep");
 // -------------------------------------------------------------------------------------
+// const uniqueInOrder = function (iterable) {
+//   const uniqueFromPair = [];
+//   for (let i = 0; i < iterable.length; i += 1) {
+//     if (iterable[i] !== iterable[i + 1]) {
+//       uniqueFromPair.push(iterable[i]);
+//     }
+//   }
+//   return uniqueFromPair;
+// };
+// console.log(uniqueInOrder('AAAABBBCCDAABBB')); //, ['A','B','C','D','A','B'])
+// -------------------------------------------------------------------------------------
+// const addBinary = (a, b) => (a + b).toString(2);
+
+// console.log(addBinary(1, 2)); //, "11"
+// -------------------------------------------------------------------------------------
+// const testEven = n => (n % 2 === 0 ? true : false);
+
+// console.log(testEven(1)); //, false, "testEven for 1");
+// console.log(testEven(2)); //, true, "testEven for 2");
+// -------------------------------------------------------------------------------------
+// const getAge = inputString => Number(inputString[0]);
+// console.log(getAge('4 years old')); //, 4
+// -------------------------------------------------------------------------------------
