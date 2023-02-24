@@ -1848,3 +1848,70 @@
 // console.log(nbDig(12224, 8)); //,  7733, "n = 12224, d = 8");
 // console.log(nbDig(11549, 1)); //, 11905, "n = 11549, d = 1");
 // -------------------------------------------------------------------------------------
+// const countSheeps = arrayOfSheep =>
+//   arrayOfSheep.reduce((acc, item) => (item ? (acc += 1) : (acc += 0)), 0);
+// порахувати все true в масиві
+// -------------------------------------------------------------------------------------
+// const removeEveryOther = arr => {
+//   const result = [];
+//   for (let i = 0; i < arr.length; i += 1) {
+//     if (i % 2 === 0) {
+//       result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// };
+
+// const removeEveryOther = arr =>
+//   arr.reduce((acc, item, idx) => {
+//     if (idx % 2 === 0) {
+//       acc.push(item);
+//     }
+//     return acc;
+//   }, []);
+
+// // console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']))//,['Hello', 'Hello Again']);
+// console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); //,[1, 3, 5, 7, 9]);
+// -------------------------------------------------------------------------------------
+// const wave = str => {
+//   const result = [];
+//   for (let i = 0; i < str.length; i += 1) {
+//     const modWordArr = str.split('');
+//     if (modWordArr[i].trim()) {
+//       const modWordLetter = modWordArr[i].toUpperCase();
+//       modWordArr[i] = modWordLetter;
+//       result.push(modWordArr.join(''));
+//     }
+//   }
+//   return result;
+// };
+
+// console.log(wave('two words')); //['Two words', 'tWo words', 'twO words', 'two Words', 'two wOrds', 'two woRds', 'two worDs', 'two wordS']
+// -------------------------------------------------------------------------------------
+// const humanYearsCatYearsDogYears = humanYears => {
+//   const result = [humanYears];
+//   const firstYear = 15;
+//   const secondYear = 9;
+//   let catYears = 0;
+//   let dogYear = 0;
+//   if (humanYears === 1) {
+//     catYears += firstYear;
+//     dogYear += firstYear;
+//   } else if (humanYears === 2) {
+//     catYears += firstYear + secondYear;
+//     dogYear += firstYear + secondYear;
+//   } else {
+//     catYears += (humanYears - 2) * 4 + firstYear + secondYear;
+//     dogYear += (humanYears - 2) * 5 + firstYear + secondYear;
+//   }
+
+//   result.push(catYears, dogYear);
+
+//   return result;
+// };
+// console.log(humanYearsCatYearsDogYears(10)); //[10,56,64]
+// -------------------------------------------------------------------------------------
+// const quarterOf = month => Math.ceil(month / 3);
+
+// console.log(quarterOf(8)); //, 3)
+// -------------------------------------------------------------------------------------
