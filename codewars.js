@@ -1922,3 +1922,72 @@
 //     .join('');
 // console.log(doubleChar('abcd')); //"aabbccdd"
 // -------------------------------------------------------------------------------------
+// String.prototype.isUpperCase = function () {
+//   return String(this) === this.toUpperCase();
+// };
+
+// console.log('hello I AM DONALD'.isUpperCase()); //false;
+// -------------------------------------------------------------------------------------
+// function switchItUp(number) {
+//   let result = '';
+//   switch (number) {
+//     case 1:
+//       result = 'One';
+//       break;
+//     case 2:
+//       result = 'Two';
+//       break;
+//     case 3:
+//       result = 'Three';
+//       break;
+//     case 4:
+//       result = 'Four';
+//       break;
+//     case 5:
+//       result = 'Five';
+//       break;
+//     case 6:
+//       result = 'Six';
+//       break;
+//     case 7:
+//       result = 'Seven';
+//       break;
+//     case 8:
+//       result = 'Eight';
+//       break;
+//     case 9:
+//       result = 'Nine';
+//       break;
+//     default:
+//       result = 'Zero';
+//   }
+//   return result;
+// }
+
+// console.log(switchItUp(1)); //,"One");
+// console.log(switchItUp(3)); //,"Three");
+// -------------------------------------------------------------------------------------
+// const solution = nums =>
+//   !nums || nums.length === 0 ? [] : nums.sort((a, b) => a - b);
+
+// console.log(solution([1, 2, 3, 10, 5])); //, [1,2,3,5,10])
+// console.log(solution(null)); //, [])
+// console.log(solution([])); //, [])
+// -------------------------------------------------------------------------------------
+
+// jhasdfnglkasdfn ипжфдвльа blds mfglbnsdamfkladjnfkljgadnlkfjdaskjfsd;lafhmnlsdkfmhfsdhdfjmggm,fj
+// const incrementString = strng => {
+//   const arrStr = [];
+//   const arrNum = [];
+//   for (let i = 0; i < strng.length; i += 1) {
+//     parseInt(strng[i] / 1) || parseInt(strng[i] / 1) === 0
+//       ? arrNum.push(Number(strng[i]))
+//       : arrStr.push(strng[i]);
+//   }
+//   console.log(arrStr);
+//   console.log(Number(arrNum.join('')) + 1);
+//   return arrStr.join('') + (Number(arrNum.join('')) + 1);
+// };
+
+// console.log(incrementString('foobar000')); //, "foobar001");
+// console.log(incrementString('foobar999')); //, "foobar1000");
