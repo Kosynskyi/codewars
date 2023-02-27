@@ -2020,3 +2020,7 @@
 // console.log(incrementString('fo99obar99')); //, "fo99obar100");
 // console.log(incrementString('009')); //, "010");
 // -------------------------------------------------------------------------------------
+// const changeFormatDate = str => str.split('').reverse().join('');
+
+// console.log(changeFormatDate('DD-MM-YYYY')); //"YYY-MM-DD"
+// -------------------------------------------------------------------------------------
