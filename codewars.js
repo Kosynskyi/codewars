@@ -1974,20 +1974,49 @@
 // console.log(solution(null)); //, [])
 // console.log(solution([])); //, [])
 // -------------------------------------------------------------------------------------
-
-// jhasdfnglkasdfn ипжфдвльа blds mfglbnsdamfkladjnfkljgadnlkfjdaskjfsd;lafhmnlsdkfmhfsdhdfjmggm,fj
 // const incrementString = strng => {
 //   const arrStr = [];
 //   const arrNum = [];
-//   for (let i = 0; i < strng.length; i += 1) {
-//     parseInt(strng[i] / 1) || parseInt(strng[i] / 1) === 0
-//       ? arrNum.push(Number(strng[i]))
-//       : arrStr.push(strng[i]);
+
+//   if (parseInt(strng / 1)) {
+//     for (let i = strng.length - 1; i >= 0; i -= 1) {
+//       if (parseInt(strng[i] / 1) || parseInt(strng[i] / 1) === 0) {
+//         arrNum.unshift(Number(strng[i]));
+//       }
+//     }
+
+//     const MathStr = String(Number(arrNum.join('')) + 1);
+//     if (MathStr.length < arrNum.length) {
+//       const dif = arrNum.length - MathStr.length;
+//       arrNum.splice(dif, MathStr.length, ...MathStr);
+
+//       return arrNum.join('');
+//     }
 //   }
-//   console.log(arrStr);
-//   console.log(Number(arrNum.join('')) + 1);
-//   return arrStr.join('') + (Number(arrNum.join('')) + 1);
+
+//   for (let i = strng.length - 1; i > 0; i -= 1) {
+//     if (parseInt(strng[i] / 1) || parseInt(strng[i] / 1) === 0) {
+//       arrNum.push(Number(strng[i]));
+//     } else {
+//       arrStr.push(strng.slice(0, i + 1));
+//       break;
+//     }
+//   }
+
+//   const MathStr = String(Number(arrNum.reverse().join('')) + 1);
+//   if (MathStr.length < arrNum.length) {
+//     const dif = arrNum.length - MathStr.length;
+//     arrNum.splice(dif, MathStr.length, ...MathStr);
+
+//     return arrStr[0] + arrNum.join('');
+//   } else {
+//     return arrStr.join('') + MathStr;
+//   }
 // };
 
 // console.log(incrementString('foobar000')); //, "foobar001");
 // console.log(incrementString('foobar999')); //, "foobar1000");
+// console.log(incrementString('foobar00999')); //, "foobar01000");
+// console.log(incrementString('fo99obar99')); //, "fo99obar100");
+// console.log(incrementString('009')); //, "010");
+// -------------------------------------------------------------------------------------
