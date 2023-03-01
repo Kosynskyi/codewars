@@ -2029,3 +2029,19 @@
 // console.log(grow([1, 2, 3]))//, 6);
 // console.log(grow([4, 1, 1, 1, 4]))//, 16);
 // -------------------------------------------------------------------------------------
+// const litres = time => Math.floor(time / 2);
+
+// console.log(litres(2)); //, 1, 'should return 1 litre');
+// console.log(litres(1.4)); //, 0, 'should return 0 litres');
+// -------------------------------------------------------------------------------------
+// const finalGrade = (exam, projects) => {
+//   if (exam > 90 || projects > 10) return 100;
+//   if (exam > 75 && projects >= 5) return 90;
+//   if (exam > 50 && projects >= 2) return 75;
+
+//   return 0;
+// };
+
+// console.log(finalGrade(100, 12)); //, 100);
+// console.log(finalGrade(85, 5)); //, 90);
+// -------------------------------------------------------------------------------------
