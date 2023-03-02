@@ -2057,3 +2057,11 @@
 // console.log(powersOfTwo(1))//, [1, 2])
 //     console.log(powersOfTwo(4))//, [1, 2, 4, 8, 16])
 // -------------------------------------------------------------------------------------
+// function gooseFilter(birds) {
+//   var geese = ['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher'];
+
+//   return birds.filter(item => !geese.includes(item));
+// }
+
+// console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]))//,["Mallard", "Hook Bill", "Crested", "Blue Swedish"])
+// -------------------------------------------------------------------------------------
