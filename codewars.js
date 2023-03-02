@@ -2045,3 +2045,15 @@
 // console.log(finalGrade(100, 12)); //, 100);
 // console.log(finalGrade(85, 5)); //, 90);
 // -------------------------------------------------------------------------------------
+// function powersOfTwo(n){
+//     let res = []
+//     for(let i = 0; i <= n; i += 1){
+
+//       res.push(Math.pow(2, i))
+//     }
+//     return res
+//   }
+
+// console.log(powersOfTwo(1))//, [1, 2])
+//     console.log(powersOfTwo(4))//, [1, 2, 4, 8, 16])
+// -------------------------------------------------------------------------------------
