@@ -2065,3 +2065,18 @@
 
 // console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]))//,["Mallard", "Hook Bill", "Crested", "Blue Swedish"])
 // -------------------------------------------------------------------------------------
+// function sum(numbers) {
+//   'use strict';
+
+//   return numbers.reduce((acc, item) => (acc += item), 0);
+// }
+// console.log(sum([1, 5.2, 4, 0, -1])); //9.2
+// -------------------------------------------------------------------------------------
+// const gimme = triplet => {
+//   const sortedArr = [...triplet].sort((a, b) => a - b);
+//   return triplet.indexOf(sortedArr[1]);
+// };
+
+// console.log(gimme([2, 3, 1])); //, 0);
+// console.log(gimme([5, 10, 14])); //, 1);
+// -------------------------------------------------------------------------------------
