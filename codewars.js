@@ -2080,3 +2080,40 @@
 // console.log(gimme([2, 3, 1])); //, 0);
 // console.log(gimme([5, 10, 14])); //, 1);
 // -------------------------------------------------------------------------------------
+// var capitals = function (word) {
+//   const arrWord = word.split('');
+
+//   const result = [];
+//   for (let i = 0; i < arrWord.length; i++) {
+//     if (arrWord[i] === arrWord[i].toUpperCase()) {
+//       result.push(i);
+//     }
+//   }
+//   return result;
+// };
+
+// console.log(capitals('CodEWaRs')); //, [0,3,4,6])
+// -------------------------------------------------------------------------------------
+// const sayHello = name => `Hello, ${name}`;
+
+// console.log(sayHello('Mr. Spock')); //, 'Hello, Mr. Spock')
+// -------------------------------------------------------------------------------------
+// function howMuchILoveYou(nbPetals) {
+//   if (nbPetals === 1 || nbPetals % 6 === 1) {
+//     return 'I love you';
+//   } else if (nbPetals === 2 || nbPetals % 6 === 2) {
+//     return 'a little';
+//   } else if (nbPetals === 3 || nbPetals % 6 === 3) {
+//     return 'a lot';
+//   } else if (nbPetals === 4 || nbPetals % 6 === 4) {
+//     return 'passionately';
+//   } else if (nbPetals === 5 || nbPetals % 6 === 5) {
+//     return 'madly';
+//   } else if (nbPetals === 6 || nbPetals % 6 === 0) {
+//     return 'not at all';
+//   }
+// }
+
+// console.log(howMuchILoveYou(7)); //,"I love you")
+// console.log(howMuchILoveYou(3)); //,"a lot")
+// -------------------------------------------------------------------------------------
