@@ -2117,3 +2117,36 @@
 // console.log(howMuchILoveYou(7)); //,"I love you")
 // console.log(howMuchILoveYou(3)); //,"a lot")
 // -------------------------------------------------------------------------------------
+// const arrayDiff = (a, b) => {
+//   const res = [];
+//   if (b.length === 0) return a;
+
+//   for (let i = 0; i < b.length; i += 1) {
+//     for (let j = 0; j < a.length; j += 1) {
+//       if (b.includes(a[j])) {
+//         continue;
+//       } else {
+//         res.push(a[j]);
+//       }
+//     }
+//     return res;
+//   }
+// };
+
+// console.log(arrayDiff([1, 2], [1])); //, [2], "a was [1,2], b was [1]");
+// console.log(arrayDiff([1, 2, 2], [1])); //, [2,2], "a was [1,2,2], b was [1]");
+// console.log(arrayDiff([1, 2, 2], [])); //, [1,2,2];
+// console.log(arrayDiff([1, 2, 3], [1, 2])); //, [3];
+// -------------------------------------------------------------------------------------
+// const removeExclamationMarks = s =>
+//   s
+//     .split('')
+//     .filter(item => item !== '!')
+//     .join('');
+// =============інше рішення=============
+// function removeExclamationMarks(s) {
+//   return s.replace(/!/g, '');
+// }
+
+// console.log(removeExclamationMarks('Hello World!')); //, "Hello World")
+// -------------------------------------------------------------------------------------
