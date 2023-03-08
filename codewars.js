@@ -2150,3 +2150,16 @@
 
 // console.log(removeExclamationMarks('Hello World!')); //, "Hello World")
 // -------------------------------------------------------------------------------------
+// const reverseLetter = str =>
+//   str
+//     .match(/[a-zA-Z]/g)
+//     .reverse()
+//     .join('');
+
+// ==========інше рішення==========
+// const reverseLetter = str => str.match(/[a-z]/g).reverse().join('');
+
+// console.log(reverseLetter('krishan')); //,"nahsirk")
+// console.log(reverseLetter('ultr53o?n')); //,"nortlu")
+// console.log(reverseLetter('j^kzrdcqahhkdyxe')); //,"jkzrdcqahhkdyxe")
+// -------------------------------------------------------------------------------------
