@@ -2163,3 +2163,34 @@
 // console.log(reverseLetter('ultr53o?n')); //,"nortlu")
 // console.log(reverseLetter('j^kzrdcqahhkdyxe')); //,"jkzrdcqahhkdyxe")
 // -------------------------------------------------------------------------------------
+// const findNeedle = haystack => {
+//   const idx = haystack.findIndex(item => item === 'needle');
+//   return `found the needle at position ${idx}`;
+// };
+
+// console.log(
+//   findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']), //"found the needle at position 5"
+// );
+// -------------------------------------------------------------------------------------
+// const getRealFloor = n => {
+//   if (n <= 0) {
+//     return n;
+//   } else if (n < 13) {
+//     return n - 1;
+//   } else {
+//     return n - 2;
+//   }
+// };
+
+// console.log(getRealFloor(1)); //,  0);
+// console.log(getRealFloor(5)); //,  4);
+// console.log(getRealFloor(15)); //, 13);
+// console.log(getRealFloor(-2)); //, -2);
+// -------------------------------------------------------------------------------------
+// const sortByLength = array => array.sort((a, b) => a.length - b.length);
+
+// console.log(sortByLength(['Longer', 'Longest', 'Short'])); //["Short", "Longer", "Longest"]
+// -------------------------------------------------------------------------------------
+// const combat = (health, damage) => (health - damage > 0 ? health - damage : 0);
+// console.log(combat(92, 8)); //84
+// -------------------------------------------------------------------------------------
