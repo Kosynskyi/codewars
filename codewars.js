@@ -2213,4 +2213,4 @@
 // console.log(isAnagram('Twoo', 'WooT')); //, true, 'The word "Twoo" is an anagram of "WooT"')
 // console.log(isAnagram('dumble', 'bumble')); //, false, 'Characters do not match for test case "dumble", "bumble"')
 // console.log(isAnagram('fCeiebQFum', 'iPfeCQebum')); //, false, 'Characters do not match for test case "dumble", "bumble"')
-// -------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------146
