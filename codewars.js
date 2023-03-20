@@ -2194,3 +2194,23 @@
 // const combat = (health, damage) => (health - damage > 0 ? health - damage : 0);
 // console.log(combat(92, 8)); //84
 // -------------------------------------------------------------------------------------
+// const mergeArrays = (arr1, arr2) =>
+//   [...arr1, ...arr2]
+//     .filter((item, idx, arr) => arr.indexOf(item) === idx)
+//     .sort((a, b) => a - b);
+
+// console.log(mergeArrays([1, 2, 3, 4], [5, 6, 7, 8])); //, [1,2,3,4,5,6,7,8]
+// console.log(mergeArrays([1, 3, 5, 7, 9], [10, 8, 6, 4, 2])); //, [1,2,3,4,5,6,7,8,9,10]
+// console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12])); //, [1,2,3,4,5,7,9,10,11,12]
+// -------------------------------------------------------------------------------------
+// function isAnagram(test, original) {
+//   return (
+//     test.toLowerCase().split('').sort().join('') ===
+//     original.toLowerCase().split('').sort().join('')
+//   );
+// }
+
+// console.log(isAnagram('Twoo', 'WooT')); //, true, 'The word "Twoo" is an anagram of "WooT"')
+// console.log(isAnagram('dumble', 'bumble')); //, false, 'Characters do not match for test case "dumble", "bumble"')
+// console.log(isAnagram('fCeiebQFum', 'iPfeCQebum')); //, false, 'Characters do not match for test case "dumble", "bumble"')
+// -------------------------------------------------------------------------------------
