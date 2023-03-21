@@ -2213,4 +2213,13 @@
 // console.log(isAnagram('Twoo', 'WooT')); //, true, 'The word "Twoo" is an anagram of "WooT"')
 // console.log(isAnagram('dumble', 'bumble')); //, false, 'Characters do not match for test case "dumble", "bumble"')
 // console.log(isAnagram('fCeiebQFum', 'iPfeCQebum')); //, false, 'Characters do not match for test case "dumble", "bumble"')
-// -------------------------------------------------------------------------------------146
+// -------------------------------------------------------------------------------------
+// const sumDigits = number =>
+//   String(number)
+//     .split('')
+//     .reduce((acc, item) => (Number(item) ? acc + Number(item) : acc + 0), 0);
+
+// console.log(sumDigits(10)); //, 1);
+// console.log(sumDigits(99)); //, 18);
+// console.log(sumDigits(-32)); //, 5);
+// -------------------------------------------------------------------------------------
