@@ -2223,3 +2223,16 @@
 // console.log(sumDigits(99)); //, 18);
 // console.log(sumDigits(-32)); //, 5);
 // -------------------------------------------------------------------------------------
+// const descendingOrder = n =>
+//   Number(
+//     String(n)
+//       .split('')
+//       .sort((a, b) => b.localeCompare(a))
+//       .join(''),
+//   );
+
+// console.log(descendingOrder(1)); //, 1)
+// console.log(descendingOrder(111)); //, 111)
+// console.log(descendingOrder(15)); //, 51)
+// console.log(descendingOrder(1021)); //, 2110)
+// -------------------------------------------------------------------------------------
