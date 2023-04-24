@@ -2257,3 +2257,25 @@
 // console.log(nameShuffler('Mary jeggins')); //,'jeggins Mary')
 // console.log(nameShuffler('tom jerry')); //,'jerry tom')
 // -------------------------------------------------------------------------------------
+// const data = [
+//   { id: 1, name: 'Vasia' },
+//   { id: 2, name: 'Kolya' },
+//   { id: 3, name: 'Vasia' },
+//   { id: 4, name: 'Vasia' },
+//   { id: 5, name: 'Dima' },
+// ];
+
+// const unique = data => {
+//   const uniqueNames = [];
+//   const res = data.reduce((acc, item) => {
+//     if (!uniqueNames.includes(item.name)) {
+//       acc.push(item);
+//       uniqueNames.push(item.name);
+//     }
+//     return acc;
+//   }, []);
+//   return res;
+// };
+
+// console.log(unique(data));
+// -------------------------------------------------------------------------------------
